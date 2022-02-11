@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		D714E69A27B639670003348B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714E69827B639670003348B /* LaunchScreen.storyboard */; };
 		D714E6A527B639680003348B /* RxDataSourceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714E6A427B639680003348B /* RxDataSourceAppTests.swift */; };
 		D714E6B027B639680003348B /* RxDataSourceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714E6AF27B639680003348B /* RxDataSourceAppUITests.swift */; };
+		D714E6C027B681AD0003348B /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714E6BF27B681AD0003348B /* SectionModel.swift */; };
+		D714E6C227B6828E0003348B /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714E6C127B6828E0003348B /* Anime.swift */; };
 		FA7E6881EAF1CCF75C3A5689 /* Pods_RxDataSourceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1888019060FC95249519223 /* Pods_RxDataSourceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		D714E6AB27B639680003348B /* RxDataSourceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxDataSourceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D714E6AF27B639680003348B /* RxDataSourceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceAppUITests.swift; sourceTree = "<group>"; };
 		D714E6B127B639680003348B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D714E6BF27B681AD0003348B /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		D714E6C127B6828E0003348B /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		E1888019060FC95249519223 /* Pods_RxDataSourceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDataSourceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F740F3A381811662A6415B62 /* Pods-RxDataSourceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDataSourceAppTests.release.xcconfig"; path = "Target Support Files/Pods-RxDataSourceAppTests/Pods-RxDataSourceAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +105,6 @@
 				9B48342E964C822F794481BC /* Pods-RxDataSourceAppTests.debug.xcconfig */,
 				F740F3A381811662A6415B62 /* Pods-RxDataSourceAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,10 +143,10 @@
 		D714E68C27B639620003348B /* RxDataSourceApp */ = {
 			isa = PBXGroup;
 			children = (
+				D714E6BE27B6817A0003348B /* ViewController */,
+				D714E6BD27B681690003348B /* Model */,
 				D714E68D27B639620003348B /* AppDelegate.swift */,
 				D714E68F27B639620003348B /* SceneDelegate.swift */,
-				D714E69127B639620003348B /* ViewController.swift */,
-				D714E69327B639620003348B /* Main.storyboard */,
 				D714E69627B639670003348B /* Assets.xcassets */,
 				D714E69827B639670003348B /* LaunchScreen.storyboard */,
 				D714E69B27B639670003348B /* Info.plist */,
@@ -167,6 +170,24 @@
 				D714E6B127B639680003348B /* Info.plist */,
 			);
 			path = RxDataSourceAppUITests;
+			sourceTree = "<group>";
+		};
+		D714E6BD27B681690003348B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D714E6C127B6828E0003348B /* Anime.swift */,
+				D714E6BF27B681AD0003348B /* SectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D714E6BE27B6817A0003348B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D714E69127B639620003348B /* ViewController.swift */,
+				D714E69327B639620003348B /* Main.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +429,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D714E69227B639620003348B /* ViewController.swift in Sources */,
+				D714E6C227B6828E0003348B /* Anime.swift in Sources */,
 				D714E68E27B639620003348B /* AppDelegate.swift in Sources */,
 				D714E69027B639620003348B /* SceneDelegate.swift in Sources */,
+				D714E6C027B681AD0003348B /* SectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
